@@ -32,7 +32,7 @@ const Nav = props => {
   }, [type])
 
   return (
-    <div id={type} className='fixed shadow-lg lg:shadow-0 lg:static top-0 left-0 flex flex-col lg:flex-row h-screen lg:h-auto w-5/6 lg:w-auto bg-white lg:bg-transparent top-0 left-0 lg:justify-between' style={{transform: type[type.length - 1] == 'd' ? 'translateX(-100px)' : ''}}>
+    <div id={type} className='fixed shadow-lg lg:shadow-transparent lg:static top-0 left-0 flex flex-col lg:flex-row h-screen lg:h-auto w-5/6 lg:w-auto bg-white lg:bg-transparent top-0 left-0 lg:justify-between' style={{transform: type[type.length - 1] == 'd' ? 'translateX(-100px)' : ''}}>
       {deviceWidth > 900 ? '' : <div className='text-right w-full py-5 px-3 border-b-1 border-gray-300 text-gray-700' onClick={openOrClose}> Close </div>}
       <NavLink to='/' onClick={() => openOrClose(true)} className={({isActive}) => isActive ? active : normal}> Home </NavLink>  
       <NavLink to='/for_sale' onClick={() => openOrClose(true)} className={({isActive}) => isActive ? active : normal}> For Sale </NavLink>
