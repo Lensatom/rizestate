@@ -1,0 +1,7 @@
+export {default as Home} from './Home'
+export {default as ForSale} from './ForSale'
+export {default as ForRent} from './ForRent'
+export {default as ForLease} from './ForLease'
+export {default as Contact} from './Contact'
+export {default as Affiliate} from './Affiliate'
+export {default as AddProperty} from './AddProperty'

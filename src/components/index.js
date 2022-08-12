@@ -1,0 +1,6 @@
+export {default as Header} from './Header'
+export {default as Nav} from './Nav'
+export {default as SearchBar} from './SearchBar'
+export {default as Footer} from './Footer'
+export {default as SignIn} from './SignIn'
+export {default as SignUp} from './SignUp'

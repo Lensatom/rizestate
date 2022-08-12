@@ -1,13 +1,19 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slide-in {
+  animation: slide-in .2s forwards;
+  transform: translateY(-100px);
 }
+@keyframes slide-in {
+  from {}
+  to {
+    transform: translateY(0px)
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
